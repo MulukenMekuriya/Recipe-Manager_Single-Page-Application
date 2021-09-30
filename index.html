@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <style>
+      .center {
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+      }
+      /* Add a black background color to the top navigation bar */
+      .topnav {
+        overflow: hidden;
+        background-color: #e9e9e9;
+      }
+
+      /* Style the links inside the navigation bar */
+      .topnav a {
+        float: left;
+        display: block;
+        color: black;
+        text-align: center;
+        padding: 14px 16px;
+        text-decoration: none;
+        font-size: 17px;
+      }
+
+      /* Change the color of links on hover */
+      .topnav a:hover {
+        background-color: #ddd;
+        color: black;
+      }
+
+      /* Style the "active" element to highlight the current page */
+      .topnav a.active {
+        background-color: #2196f3;
+        color: white;
+      }
+
+      /* Style the search box inside the navigation bar */
+      .topnav input[type="text"] {
+        float: right;
+        padding: 6px;
+        border: none;
+        margin-top: 8px;
+        margin-right: 16px;
+        font-size: 17px;
+      }
+
+      /* When the screen is less than 600px wide, stack the links and the search field vertically instead of horizontally */
+      @media screen and (max-width: 600px) {
+        .topnav a,
+        .topnav input[type="text"] {
+          float: none;
+          display: block;
+          text-align: left;
+          width: 100%;
+          margin: 0;
+          padding: 14px;
+        }
+        .topnav input[type="text"] {
+          border: 1px solid #ccc;
+        }
+      }
+    </style>
+    <header id="header"></header>
+    <div class="topnav">
+      <a class="active" href="#home">Home</a>
+      <a href="#about">About</a>
+      <a href="#contact">Contact</a>
+      <input type="text" placeholder="Search.." />
+    </div>
+    <img
+      src="https://assets.bonappetit.com/photos/5ea8f0df16738800085ad5d2/1:1/w_1920,c_limit/Chicken-Parmesean-Recipe-Lede.jpg"
+      alt="Injera"
+      width="700"
+      height="641"
+      class="center"
+    />
+    <ul id="list"></ul>
+
+    <footer id="footer"></footer>
+  </body>
+</html>
